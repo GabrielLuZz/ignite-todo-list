@@ -1,0 +1,48 @@
+.header {
+  height: 12.5rem;
+  background-color: var(--gray-800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.searchableArea {
+  display: flex;
+  gap: 0.5rem;
+  transform: translateY(-50%);
+}
+
+.searchableArea input {
+  flex: 1;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-800);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--gray-100);
+}
+
+.searchableArea input::placeholder {
+  color: var(--gray-300);
+}
+
+.searchableArea button {
+  width: 5.625rem;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  border-radius: 8px;
+  background-color: var(--blue-500);
+  color: var(--gray-100);
+
+  font-weight: 700;
+}

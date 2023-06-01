@@ -19,6 +19,11 @@
   --red-500: #e25858;
 }
 
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--gray-100);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +43,7 @@ button {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.4;
+  border: none;
 }
 
 a {

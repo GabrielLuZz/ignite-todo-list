@@ -4,22 +4,22 @@ import { ITask } from '../interfaces/task';
 export const tasks: ITask[] = [
   {
     id: uuidv4(),
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae sapiente praesentium ab officia minima vitae voluptates voluptate nesciunt, placeat exercitationem libero ipsam deserunt mollitia dicta! Aliquid porro accusantium iusto.',
+    title: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.',
     isCompleted: true
   },
   {
     id: uuidv4(),
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae sapiente praesentium ab officia minima vitae voluptates voluptate nesciunt, placeat exercitationem libero ipsam deserunt mollitia dicta! Aliquid porro accusantium iusto.',
+    title: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.',
     isCompleted: true
   },
   {
     id: uuidv4(),
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae sapiente praesentium ab officia minima vitae voluptates voluptate nesciunt, placeat exercitationem libero ipsam deserunt mollitia dicta! Aliquid porro accusantium iusto.',
+    title: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.',
     isCompleted: true
   },
   {
     id: uuidv4(),
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae sapiente praesentium ab officia minima vitae voluptates voluptate nesciunt, placeat exercitationem libero ipsam deserunt mollitia dicta! Aliquid porro accusantium iusto.',
+    title: 'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.',
     isCompleted: true
   },
 ]
