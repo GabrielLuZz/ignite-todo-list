@@ -9,6 +9,7 @@
 .main {
   max-width: 46rem;
   margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .searchableArea {
@@ -43,6 +44,24 @@
   border-radius: 8px;
   background-color: var(--blue-500);
   color: var(--gray-100);
+  transition: background-color ease 0.2s;
+  cursor: pointer;
 
   font-weight: 700;
+}
+
+@media (min-width: 900px) {
+  .searchableArea button:hover {
+    background-color: var(--blue-300);
+  }
+}
+
+@media (max-width: 380px) {
+  .searchableArea button {
+    width: auto;
+  }
+
+  .searchableArea button span {
+    display: none;
+  }
 }
