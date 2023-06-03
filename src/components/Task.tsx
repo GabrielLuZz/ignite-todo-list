@@ -1,15 +1,31 @@
+import { MouseEvent } from "react";
+import { ITask } from "../interfaces/task";
 import styles from "./Task.module.css";
 
-import trash from "../assets/trash.svg";
+interface IProps {
+  task: ITask;
+  toggleTaskState: (task: ITask) => void;
+  deleteTask: (task: ITask) => void;
+}
 
-export function Task() {
+export function Task({ task, toggleTaskState, deleteTask }: IProps) {
+  const handleToggleStateTask = (e: MouseEvent<HTMLElement>) => {
+    if (e.target.localName !== "svg" && e.target.localName !== "path") {
+      toggleTaskState(task);
+    }
+  };
+
+  const handleDeleteTask = () => {
+    deleteTask(task);
+  };
   return (
-    <div className={styles.wrapper}>
-      <div className={`${styles.check} ${styles.unchecked}`}></div>
-      <p className={styles.text}>
-        Integer urna interdum massa libero auctor neque turpis turpis semper.
-        Duis vel sed fames integer dsfsdf.
-      </p>
+    <div className={styles.wrapper} onClick={handleToggleStateTask}>
+      <div
+        className={`${styles.check} ${
+          task.isCompleted ? styles.checked : styles.unchecked
+        }`}
+      ></div>
+      <p className={styles.text}>{task.title}</p>
       <svg
         width="24"
         height="24"
@@ -17,6 +33,7 @@ export function Task() {
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        onClick={handleDeleteTask}
       >
         <path
           d="M14.2021 9.98547H12.8716V15.5073H14.2021V9.98547Z"

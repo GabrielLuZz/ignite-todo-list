@@ -1,0 +1,1 @@
+esse projeto é um todo-list criado no desafio 1 do modulo 1 do ignite da nova trila de react. com ele treinei os conceitos de imutabilidade, renderização de listas, criação de componentes, além dos outros diversos conceitos basicos do react.

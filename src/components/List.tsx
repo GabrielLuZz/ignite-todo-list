@@ -1,14 +1,24 @@
+import { ITask } from "../interfaces/task";
 import styles from "./List.module.css";
 import { Task } from "./Task";
 
-export function List() {
+interface IProps {
+  tasks: ITask[];
+  toggleTaskState: (task: ITask) => void;
+  deleteTask: (task: ITask) => void;
+}
+
+export function List({ tasks, toggleTaskState, deleteTask }: IProps) {
   return (
     <div className={styles.wrapper}>
-      <Task />
-      <Task />
-      <Task />
-      <Task />
-      <Task />
+      {tasks?.map((task) => (
+        <Task
+          key={task.id}
+          task={task}
+          toggleTaskState={toggleTaskState}
+          deleteTask={deleteTask}
+        />
+      ))}
     </div>
   );
 }
